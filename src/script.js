@@ -190,6 +190,15 @@ window.addEventListener('click', () =>
     createRandomFirework()
 })
 
+// Create firework on touch event
+window.addEventListener('touchstart', () =>
+{
+    createRandomFirework()
+})
+
+// Create firework on load
+createRandomFirework()
+
 // Sky
 const sky = new Sky()
 sky.material.uniforms.turbidity.value = 8
